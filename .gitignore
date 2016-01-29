@@ -74,3 +74,6 @@ jrebel.lic
 
 # Travis CI
 .dpl
+
+#Custom
+urls.txt
