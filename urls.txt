@@ -1,0 +1,6 @@
+"https://github.com/" "https://github.com/databricks"
+"https://github.com/" "https://github.com/Loyola"
+"https://github.com/" "https://github.com/Code"
+"https://github.com/" "https://github.com/Chicago"
+"https://api.github.com" "https://api.github.com/user"
+"https://www.google.com" "https://www.gmail.com"
