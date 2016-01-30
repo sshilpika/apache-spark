@@ -77,3 +77,5 @@ jrebel.lic
 
 #Custom
 urls.txt
+jsonread.json
+/outputjson/

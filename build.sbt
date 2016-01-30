@@ -8,7 +8,8 @@ resolvers += "Typesafe repository releases" at "http://repo.typesafe.com/typesaf
 //provided ignores jars that are already part of the container like Spark https://github.com/sbt/sbt-assembly#excluding-jars-and-files
 libraryDependencies ++= Seq (
   "org.scalatest" %% "scalatest" % "2.2.6" % Test,
-  "org.apache.spark" % "spark-core_2.10" % "1.6.0" % "provided"
+  "org.apache.spark" % "spark-core_2.10" % "1.6.0" % "provided",
+  "com.fasterxml.jackson.module" % "jackson-module-scala_2.10" % "2.6.3"
 )
 
 mainClass in assembly := Some("SparkPageRank")

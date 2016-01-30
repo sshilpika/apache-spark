@@ -1,9 +1,7 @@
+package edu.luc.cs.apache.spark.examples
 /**
   * Created by Shilpika on 1/27/16.
   */
-import org.apache.spark.SparkConf
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkContext._
 
 /**
   * Computes the PageRank of URLs from an input file. Input file should
@@ -17,6 +15,9 @@ import org.apache.spark.SparkContext._
   * This is an example implementation for learning how to use Spark. For more conventional use,
   * please refer to org.apache.spark.graphx.lib.PageRank
   */
+import org.apache.spark.SparkConf
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
 
 object SparkPageRank {
 
@@ -28,7 +29,7 @@ object SparkPageRank {
       """.stripMargin)
   }
 
-  def main(args: Array[String]): Unit = {
+  def main1(args: Array[String]): Unit = {
 
     if(args.length <1){
       System.err.println("Usage: SparkPageRank <Filename> <iter_count>")
