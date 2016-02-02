@@ -29,7 +29,7 @@ object SparkPageRank {
       """.stripMargin)
   }
 
-  def main1(args: Array[String]): Unit = {
+  def mainForPage(args: Array[String]): Unit = {
 
     if(args.length <1){
       System.err.println("Usage: SparkPageRank <Filename> <iter_count>")
@@ -60,18 +60,6 @@ object SparkPageRank {
     val output = ranks.collect()
     output.foreach(tup => println(tup._1 + " has rank: " + tup._2 + "."))
 
-    //println(ranks.collect().mkString)
-    /*for(i <- 1 to iter){
-      val contribs = links.join(ranks).values.flatMap{case(urls,rank) =>
-        val size = urls.size
-        urls.map(url => (url,rank/size))
-      }
-      ranks = contribs.reduceByKey(_+_).mapValues(0.15 +0.85*_)
-
-    }
-
-    val output = ranks.collect()
-    output.foreach(tup => println(tup._1+" has rank "+tup._2+"."))*/
     sc.stop()
   }
 
